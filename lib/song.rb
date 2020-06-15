@@ -25,8 +25,8 @@ class Song
     song
   end
 
-  def artist=
-    Artist.add_song
+  def artist
+    @artist
   end
 
 end

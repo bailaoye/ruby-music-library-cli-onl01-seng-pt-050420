@@ -32,7 +32,7 @@ class Genre
   def artists
     @artists_array = []
     @songs.each do |song|
-      @artist_array.include?(song.artist) ? nil : @artists_array << song.artist
+      @artists_array.include?(song.artist) ? nil : @artists_array << song.artist
     end
     @artists_array
   end

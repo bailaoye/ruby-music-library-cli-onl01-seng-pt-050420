@@ -58,6 +58,7 @@ class Song
     artist_name = filenames[0]
     genre_name = filenames[2].split(".mp3")
     self.new(song_name, artist, genre)
+  end
 
   def self.create_from_filename(filename)
     self.new_from_filename(filename).save

@@ -41,7 +41,7 @@ class Song
 
   def genre=(genre)
     @genre = genre
-    artist.add_genre(self)
+    genre.songs << self unless genre.songs.include?(self)
   end
 
 

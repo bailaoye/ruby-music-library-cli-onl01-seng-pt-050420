@@ -29,4 +29,8 @@ class Song
     @artist
   end
 
+  def artist=(artist)
+    @artist = artist
+    artist.add_song(self0)
+
 end

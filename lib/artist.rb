@@ -37,6 +37,10 @@ class Artist
 
   def genres
     @genres_array = []
+    @songs.each do |song|
+      @genres_array.include?(song.genre) ? nil : @new_array << song.genre
+    end
+
 
 
 end

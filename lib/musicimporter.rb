@@ -1,11 +1,11 @@
 class MusicImporter
-  attr_accessor :filepath, :song, :artist, :genre
-  def initialize(filepath)
-    @filepath = filepath
+  attr_accessor :path, :song, :artist, :genre
+  def initialize(path)
+    @path = path
   end
 
   def files
-    Dir.entries(@filepath).select! {|entry| entry.end_with?(".mp3")}
+    Dir.entries(@path).select! {|entry| entry.end_with?(".mp3")}
   end
 
 end

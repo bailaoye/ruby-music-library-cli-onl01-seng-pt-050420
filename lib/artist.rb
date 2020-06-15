@@ -1,6 +1,7 @@
 class Artist
   attr_accessor :name, :songs
   @@all = []
+  extend Concerns::Findalbe
 
   def initialize(name)
     @name = name

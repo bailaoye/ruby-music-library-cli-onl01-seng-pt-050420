@@ -35,5 +35,8 @@ class Artist
     songs.include?(song) ? nil : @songs << song
   end
 
+  def genres
+    @genres_array = []
+
 
 end

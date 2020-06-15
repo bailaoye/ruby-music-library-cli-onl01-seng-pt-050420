@@ -29,4 +29,7 @@ class Genre
     @songs
   end
 
+  def artists
+    @artists_array = []
+
 end

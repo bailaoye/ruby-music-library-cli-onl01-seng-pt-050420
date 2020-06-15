@@ -34,5 +34,6 @@ class Genre
     @songs.each do |song|
       @artist_array.include?(song.artist) ? nil : @artists_array << song.artist
     end
+  end
 
 end
